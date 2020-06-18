@@ -1,0 +1,111 @@
+body{
+    background-color: #00bcd4;
+    color:#fff;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    width:50%;
+    box-sizing: border-box;
+    margin:20px auto;
+    background-color: black;
+    padding:20px;
+    border-radius: 20px;
+}
+.container img{
+    width:80px;
+    display: flex;
+    background-color: rebeccapurple;
+    box-sizing: border-box;
+    align-items: center;
+    height:80px;
+    margin: 0px auto 20px;
+    border:2px solid grey;
+    border-radius: 50%;
+    text-align: center;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+}
+form #task{
+    width:80%;
+    font-weight: bold;
+    padding:10px 25px;
+    outline:none;
+    border:none;
+    caret-color: aqua;
+}
+form #btn{
+    padding:11px 30px;
+    outline:none;
+    border:none;
+    background-color:#511845;
+    cursor: pointer;
+    color:#fff;
+    transition: all 0.3s;
+}
+form #btn:hover{
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+.tasks{
+    display: block;
+    margin:auto;
+    margin-top:20px;
+}
+.tasks p{
+    padding:10px;
+    display: flex;
+    align-items: center;
+    justify-self: start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0px;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin-bottom:5px;
+    box-shadow:0px 0px 15px rgba(153, 146, 146, 0.1),
+               0px 0px 20px rgba(70, 66, 66, 0.1),
+               0px 0px 25px rgba(70, 66, 66, 0.1);
+}
+.tasks p:hover{
+    color:grey;
+    text-decoration: line-through;
+}
+nav{
+    display: flex;
+    width:100%;
+    box-sizing: border-box;
+    background-color: #6a097d;
+    padding:15px;
+    margin: 0px;
+}
+nav li{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+}
+nav li a{
+    text-decoration: none;
+    color:#fff;
+    padding:10px 20px;
+    transition: 0.5s;
+    box-sizing: border-box;
+}
+nav li a:hover{
+    background: rgba(0,0,0,0.1);
+}
+img{
+    width:150px;
+    height: 150px;
+    object-fit: contain;
+}
+@media screen and (max-width:960px) and (min-width:300px)
+{
+    .container{
+        width:90%;
+    }
+}
